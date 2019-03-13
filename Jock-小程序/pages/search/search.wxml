@@ -1,0 +1,29 @@
+<view class="container">
+  <!-- LOGO标签 -->
+    <image src="../../images/logo.png" class='headimg'></image>
+  <view class="num-wrap">
+  <view class='search-input'>
+     <input type="number" name="" placeholder="请输入您要查询的序列号" class="num-box" value="{{phoneNum}}" bindinput="phoneNum" />
+  </view>
+    <view class="iconfont icon-guanbi2fill close-num" bindtap="cleanPhoneNum"></view>
+    <button class="search-btn" bindtap="sendPhoneNum">查询</button>
+    
+  </view>
+ 
+
+
+
+
+  <view class="into-item">
+     <text class="title">条形码：{{phoneInfo.barcode}}</text>
+  </view>
+  <view class="into-item">
+     <text class="title">名称：{{phoneInfo.goodsName}}</text>
+  </view>
+  <view class="into-item">
+     <text class="title">价格：{{phoneInfo.price}}</text>
+  </view>
+
+ 
+
+</view>
